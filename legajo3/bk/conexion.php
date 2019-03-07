@@ -1,12 +1,17 @@
 <?php
-$conexion = mysqli_connect('localhost', 'root','');
-mysqli_select_db($conexion, 'salud');
-$resultado = mysqli_query($conexion,"select id, nombre, contraseña");
 
-
-
-
-
-
+/**
+ * Created by PhpStorm.
+ * User: Sarid
+ * Date: 7/03/2019
+ * Time: 08:11
+ */
+$conexion=new mysqli("localhost","root","","salud");
+if ($conexion){
+    echo "conexión exitosa";
+}
+else{
+    echo "conexion no exitosa";
+}
 
 ?>
